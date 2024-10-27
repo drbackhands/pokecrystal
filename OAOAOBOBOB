@@ -1,0 +1,299 @@
+[35mSTYLE.md[m[36m:[mSECTION "section", [1;31mROMX[m
+[35maudio.asm[m[36m:[mSECTION "Audio", [1;31mROMX[m
+[35maudio.asm[m[36m:[mSECTION "Songs 1", [1;31mROMX[m
+[35maudio.asm[m[36m:[mSECTION "Songs 2", [1;31mROMX[m
+[35maudio.asm[m[36m:[mSECTION "Songs 3", [1;31mROMX[m
+[35maudio.asm[m[36m:[mSECTION "Songs 4", [1;31mROMX[m
+[35maudio.asm[m[36m:[mSECTION "Songs 5", [1;31mROMX[m
+[35maudio.asm[m[36m:[mSECTION "Extra Songs 1", [1;31mROMX[m
+[35maudio.asm[m[36m:[mSECTION "Extra Songs 2", [1;31mROMX[m
+[35maudio.asm[m[36m:[mSECTION "New Songs", [1;31mROMX[m
+[35maudio.asm[m[36m:[mSECTION "Sound Effects", [1;31mROMX[m
+[35maudio.asm[m[36m:[mSECTION "Crystal Sound Effects", [1;31mROMX[m
+[35maudio.asm[m[36m:[mSECTION "Cries", [1;31mROMX[m
+[35mdata/maps/blocks.asm[m[36m:[mSECTION "Map Blocks 1", [1;31mROMX[m
+[35mdata/maps/blocks.asm[m[36m:[mSECTION "Map Blocks 2", [1;31mROMX[m
+[35mdata/maps/blocks.asm[m[36m:[mSECTION "Map Blocks 3", [1;31mROMX[m
+[35mdata/maps/map_data.asm[m[36m:[mSECTION "Maps", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 1", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 2", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 3", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 4", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 5", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 6", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 7", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 8", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 9", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 10", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 11", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 12", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 13", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 14", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 15", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 16", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 17", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 18", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 19", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 20", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 21", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 22", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 23", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 24", [1;31mROMX[m
+[35mdata/maps/scripts.asm[m[36m:[mSECTION "Map Scripts 25", [1;31mROMX[m
+[35mdata/pokemon/dex_entries.asm[m[36m:[mSECTION "Pokedex Entries 001-064", [1;31mROMX[m
+[35mdata/pokemon/dex_entries.asm[m[36m:[mSECTION "Pokedex Entries 065-128", [1;31mROMX[m
+[35mdata/pokemon/dex_entries.asm[m[36m:[mSECTION "Pokedex Entries 129-192", [1;31mROMX[m
+[35mdata/pokemon/dex_entries.asm[m[36m:[mSECTION "Pokedex Entries 193-251", [1;31mROMX[m
+[35mdata/pokemon/egg_moves.asm[m[36m:[mSECTION "Egg Moves", [1;31mROMX[m
+[35mdata/pokemon/evos_attacks.asm[m[36m:[mSECTION "Evolutions and Attacks", [1;31mROMX[m
+[35mdata/text/common.asm[m[36m:[mSECTION "Text 1", [1;31mROMX[m
+[35mdata/text/common.asm[m[36m:[mSECTION "Text 2", [1;31mROMX[m
+[35mdata/text/common.asm[m[36m:[mSECTION "Text 3", [1;31mROMX[m
+[35mdocs/design_flaws.md[m[36m:[mSECTION "Pic Pointers", [1;31mROMX[m
+[35mdocs/design_flaws.md[m[36m:[mSECTION "Unown Pic Pointers", [1;31mROMX[m
+[35mdocs/design_flaws.md[m[36m:[m[1;31mROMX[m $48
+[35mdocs/design_flaws.md[m[36m:[m[1;31mROMX[m $49
+[35mengine/debug/debug_room.asm[m[36m:[m	call Compute[1;31mROMX[mChecksum
+[35mengine/debug/debug_room.asm[m[36m:[m.Compute[1;31mROMX[mChecksum: ; unreferenced
+[35mengine/debug/debug_room.asm[m[36m:[m	ld hl, $4000 ; [1;31mROMX[m start
+[35mengine/debug/debug_room.asm[m[36m:[m	cp $80 ; HIGH([1;31mROMX[m end)
+[35mengine/movie/credits.asm[m[36m:[mSECTION "Credits", [1;31mROMX[m
+[35mengine/overworld/events.asm[m[36m:[mSECTION "Events", [1;31mROMX[m
+[35mgfx/misc.asm[m[36m:[mSECTION "Trainer Backpics", [1;31mROMX[m
+[35mgfx/misc.asm[m[36m:[mSECTION "Shrink Pics", [1;31mROMX[m
+[35mgfx/misc.asm[m[36m:[mSECTION "Unused Egg Pic", [1;31mROMX[m
+[35mgfx/misc.asm[m[36m:[mSECTION "The End", [1;31mROMX[m
+[35mgfx/misc.asm[m[36m:[mSECTION "Font Inversed", [1;31mROMX[m
+[35mgfx/misc.asm[m[36m:[mSECTION "Copyright", [1;31mROMX[m
+[35mgfx/misc.asm[m[36m:[mSECTION "Intro Logo", [1;31mROMX[m
+[35mgfx/misc.asm[m[36m:[mSECTION "Unown Font", [1;31mROMX[m
+[35mgfx/misc.asm[m[36m:[mSECTION "Pokégear GFX", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pic Pointers", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Unown Pic Pointers", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Trainer Pic Pointers", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 1", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 2", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 3", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 4", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 5", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 6", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 7", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 8", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 9", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 10", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 11", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 12", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 13", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 14", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 15", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 16", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 17", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 18", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 19", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 20", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 21", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 22", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 23", [1;31mROMX[m
+[35mgfx/pics.asm[m[36m:[mSECTION "Pics 24", [1;31mROMX[m
+[35mgfx/sprites.asm[m[36m:[mSECTION "Sprites 1", [1;31mROMX[m
+[35mgfx/sprites.asm[m[36m:[mSECTION "Sprites 2", [1;31mROMX[m
+[35mgfx/sprites.asm[m[36m:[mSECTION "Sprites 3", [1;31mROMX[m
+[35mgfx/tilesets.asm[m[36m:[mSECTION "Tileset Data 1", [1;31mROMX[m
+[35mgfx/tilesets.asm[m[36m:[mSECTION "Tileset Data 2", [1;31mROMX[m
+[35mgfx/tilesets.asm[m[36m:[mSECTION "Tileset Data 3", [1;31mROMX[m
+[35mgfx/tilesets.asm[m[36m:[mSECTION "Tileset Data 4", [1;31mROMX[m
+[35mgfx/tilesets.asm[m[36m:[mSECTION "Tileset Data 5", [1;31mROMX[m
+[35mgfx/tilesets.asm[m[36m:[mSECTION "Tileset Data 6", [1;31mROMX[m
+[35mgfx/tilesets.asm[m[36m:[mSECTION "Tileset Data 7", [1;31mROMX[m
+[35mgfx/tilesets.asm[m[36m:[mSECTION "Tileset Data 8", [1;31mROMX[m
+[35mhome/map.asm[m[36m:[mCompute[1;31mROMX[mChecksum::
+[35mhome/map.asm[m[36m:[m	ld hl, $4000 ; [1;31mROMX[m start
+[35mhome/map.asm[m[36m:[m	cp $80 ; HIGH([1;31mROMX[m end)
+[35mlayout.link[m[36m:[m[1;31mROMX[m $01
+[35mlayout.link[m[36m:[m[1;31mROMX[m $02
+[35mlayout.link[m[36m:[m[1;31mROMX[m $03
+[35mlayout.link[m[36m:[m[1;31mROMX[m $04
+[35mlayout.link[m[36m:[m[1;31mROMX[m $05
+[35mlayout.link[m[36m:[m[1;31mROMX[m $06
+[35mlayout.link[m[36m:[m[1;31mROMX[m $07
+[35mlayout.link[m[36m:[m[1;31mROMX[m $08
+[35mlayout.link[m[36m:[m[1;31mROMX[m $09
+[35mlayout.link[m[36m:[m[1;31mROMX[m $0a
+[35mlayout.link[m[36m:[m[1;31mROMX[m $0b
+[35mlayout.link[m[36m:[m[1;31mROMX[m $0c
+[35mlayout.link[m[36m:[m[1;31mROMX[m $0d
+[35mlayout.link[m[36m:[m[1;31mROMX[m $0e
+[35mlayout.link[m[36m:[m[1;31mROMX[m $0f
+[35mlayout.link[m[36m:[m[1;31mROMX[m $10
+[35mlayout.link[m[36m:[m[1;31mROMX[m $11
+[35mlayout.link[m[36m:[m[1;31mROMX[m $12
+[35mlayout.link[m[36m:[m[1;31mROMX[m $13
+[35mlayout.link[m[36m:[m[1;31mROMX[m $14
+[35mlayout.link[m[36m:[m[1;31mROMX[m $15
+[35mlayout.link[m[36m:[m[1;31mROMX[m $16
+[35mlayout.link[m[36m:[m[1;31mROMX[m $17
+[35mlayout.link[m[36m:[m[1;31mROMX[m $18
+[35mlayout.link[m[36m:[m[1;31mROMX[m $19
+[35mlayout.link[m[36m:[m[1;31mROMX[m $1a
+[35mlayout.link[m[36m:[m[1;31mROMX[m $1b
+[35mlayout.link[m[36m:[m[1;31mROMX[m $1c
+[35mlayout.link[m[36m:[m[1;31mROMX[m $1d
+[35mlayout.link[m[36m:[m[1;31mROMX[m $1e
+[35mlayout.link[m[36m:[m[1;31mROMX[m $1f
+[35mlayout.link[m[36m:[m[1;31mROMX[m $20
+[35mlayout.link[m[36m:[m[1;31mROMX[m $21
+[35mlayout.link[m[36m:[m[1;31mROMX[m $22
+[35mlayout.link[m[36m:[m[1;31mROMX[m $23
+[35mlayout.link[m[36m:[m[1;31mROMX[m $24
+[35mlayout.link[m[36m:[m[1;31mROMX[m $25
+[35mlayout.link[m[36m:[m[1;31mROMX[m $26
+[35mlayout.link[m[36m:[m[1;31mROMX[m $27
+[35mlayout.link[m[36m:[m[1;31mROMX[m $28
+[35mlayout.link[m[36m:[m[1;31mROMX[m $29
+[35mlayout.link[m[36m:[m[1;31mROMX[m $2a
+[35mlayout.link[m[36m:[m[1;31mROMX[m $2b
+[35mlayout.link[m[36m:[m[1;31mROMX[m $2c
+[35mlayout.link[m[36m:[m[1;31mROMX[m $2d
+[35mlayout.link[m[36m:[m[1;31mROMX[m $2e
+[35mlayout.link[m[36m:[m[1;31mROMX[m $2f
+[35mlayout.link[m[36m:[m[1;31mROMX[m $30
+[35mlayout.link[m[36m:[m[1;31mROMX[m $31
+[35mlayout.link[m[36m:[m[1;31mROMX[m $32
+[35mlayout.link[m[36m:[m[1;31mROMX[m $33
+[35mlayout.link[m[36m:[m[1;31mROMX[m $34
+[35mlayout.link[m[36m:[m[1;31mROMX[m $35
+[35mlayout.link[m[36m:[m[1;31mROMX[m $36
+[35mlayout.link[m[36m:[m[1;31mROMX[m $37
+[35mlayout.link[m[36m:[m[1;31mROMX[m $38
+[35mlayout.link[m[36m:[m[1;31mROMX[m $39
+[35mlayout.link[m[36m:[m[1;31mROMX[m $3a
+[35mlayout.link[m[36m:[m[1;31mROMX[m $3b
+[35mlayout.link[m[36m:[m[1;31mROMX[m $3c
+[35mlayout.link[m[36m:[m[1;31mROMX[m $3d
+[35mlayout.link[m[36m:[m[1;31mROMX[m $3e
+[35mlayout.link[m[36m:[m[1;31mROMX[m $3f
+[35mlayout.link[m[36m:[m[1;31mROMX[m $40
+[35mlayout.link[m[36m:[m[1;31mROMX[m $41
+[35mlayout.link[m[36m:[m[1;31mROMX[m $42
+[35mlayout.link[m[36m:[m[1;31mROMX[m $43
+[35mlayout.link[m[36m:[m[1;31mROMX[m $44
+[35mlayout.link[m[36m:[m[1;31mROMX[m $45
+[35mlayout.link[m[36m:[m[1;31mROMX[m $46
+[35mlayout.link[m[36m:[m[1;31mROMX[m $47
+[35mlayout.link[m[36m:[m[1;31mROMX[m $48
+[35mlayout.link[m[36m:[m[1;31mROMX[m $49
+[35mlayout.link[m[36m:[m[1;31mROMX[m $4a
+[35mlayout.link[m[36m:[m[1;31mROMX[m $4b
+[35mlayout.link[m[36m:[m[1;31mROMX[m $4c
+[35mlayout.link[m[36m:[m[1;31mROMX[m $4d
+[35mlayout.link[m[36m:[m[1;31mROMX[m $4e
+[35mlayout.link[m[36m:[m[1;31mROMX[m $4f
+[35mlayout.link[m[36m:[m[1;31mROMX[m $50
+[35mlayout.link[m[36m:[m[1;31mROMX[m $51
+[35mlayout.link[m[36m:[m[1;31mROMX[m $52
+[35mlayout.link[m[36m:[m[1;31mROMX[m $53
+[35mlayout.link[m[36m:[m[1;31mROMX[m $54
+[35mlayout.link[m[36m:[m[1;31mROMX[m $55
+[35mlayout.link[m[36m:[m[1;31mROMX[m $56
+[35mlayout.link[m[36m:[m[1;31mROMX[m $57
+[35mlayout.link[m[36m:[m[1;31mROMX[m $58
+[35mlayout.link[m[36m:[m[1;31mROMX[m $59
+[35mlayout.link[m[36m:[m[1;31mROMX[m $5a
+[35mlayout.link[m[36m:[m[1;31mROMX[m $5b
+[35mlayout.link[m[36m:[m[1;31mROMX[m $5c
+[35mlayout.link[m[36m:[m[1;31mROMX[m $5d
+[35mlayout.link[m[36m:[m[1;31mROMX[m $5e
+[35mlayout.link[m[36m:[m[1;31mROMX[m $5f
+[35mlayout.link[m[36m:[m[1;31mROMX[m $60
+[35mlayout.link[m[36m:[m[1;31mROMX[m $61
+[35mlayout.link[m[36m:[m[1;31mROMX[m $62
+[35mlayout.link[m[36m:[m[1;31mROMX[m $63
+[35mlayout.link[m[36m:[m[1;31mROMX[m $64
+[35mlayout.link[m[36m:[m[1;31mROMX[m $65
+[35mlayout.link[m[36m:[m[1;31mROMX[m $66
+[35mlayout.link[m[36m:[m[1;31mROMX[m $67
+[35mlayout.link[m[36m:[m[1;31mROMX[m $68
+[35mlayout.link[m[36m:[m[1;31mROMX[m $69
+[35mlayout.link[m[36m:[m[1;31mROMX[m $6a
+[35mlayout.link[m[36m:[m[1;31mROMX[m $6b
+[35mlayout.link[m[36m:[m[1;31mROMX[m $6c
+[35mlayout.link[m[36m:[m[1;31mROMX[m $6d
+[35mlayout.link[m[36m:[m[1;31mROMX[m $6e
+[35mlayout.link[m[36m:[m[1;31mROMX[m $6f
+[35mlayout.link[m[36m:[m[1;31mROMX[m $70
+[35mlayout.link[m[36m:[m[1;31mROMX[m $71
+[35mlayout.link[m[36m:[m[1;31mROMX[m $72
+[35mlayout.link[m[36m:[m[1;31mROMX[m $73
+[35mlayout.link[m[36m:[m[1;31mROMX[m $74
+[35mlayout.link[m[36m:[m[1;31mROMX[m $77
+[35mlayout.link[m[36m:[m[1;31mROMX[m $78
+[35mlayout.link[m[36m:[m[1;31mROMX[m $7b
+[35mlayout.link[m[36m:[m[1;31mROMX[m $7c
+[35mlayout.link[m[36m:[m[1;31mROMX[m $7d
+[35mlayout.link[m[36m:[m[1;31mROMX[m $7e
+[35mlayout.link[m[36m:[m[1;31mROMX[m $7f
+[35mlib/mobile/mail.asm[m[36m:[mSECTION "Mobile Adapter SDK Mail", [1;31mROMX[m
+[35mlib/mobile/main.asm[m[36m:[mSECTION "Mobile Adapter SDK", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank1", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank2", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank3", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank4", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank5", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Roofs", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Clock Reset", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank9", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bankA", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bankB", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Effect Commands", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Enemy Trainers", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Battle Core", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank10", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank11", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Crystal Features 1", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank13", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank13_2", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank14", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Crystal Phone Text", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank20", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank21", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Crystal Features 2", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank23", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank24", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Phone Scripts 1", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Phone Text", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank2E", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Phone Scripts 2", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank32", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Move Animations", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Pic Animations 1", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Pic Animations 2", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Pic Animations 3", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank38", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank39", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank3E", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank3F", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "mobile40", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank41", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "mobile42", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Title", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "mobile45", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "mobile46", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Battle Tower", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank5B", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "mobile5C", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Crystal Phone Text 2", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "UpdateBattleHUDs", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "mobile5E", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "mobile5F", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Phone Text 2", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Special Phone Text", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Miscellaneous Text", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Print Party", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "bank77", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "European Mail", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Debug Room", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Battle Tower Text", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Battle Tower Trainer Data", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Mobile News Data", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Crystal Events", [1;31mROMX[m
+[35mmain.asm[m[36m:[mSECTION "Stadium 2 Checksums", [1;31mROMX[m[$7DE0], BANK[$7F]

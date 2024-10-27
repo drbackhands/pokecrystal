@@ -70,4 +70,8 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; OFFICER
 	dn  7, 14, 10,  8 ; GRUNTF
 	dn  9,  8,  8,  8 ; MYSTICALMAN
+	dn 13, 13, 13, 13 ; BLUE_SAGE
+	dn 13, 13, 13, 13 ; YELLOW_SAGE
+	dn 13, 13, 13, 13 ; RED_SAGE
+	dn 14, 14, 14, 14 ; GRAND_SAGE	
 	assert_table_length NUM_TRAINER_CLASSES

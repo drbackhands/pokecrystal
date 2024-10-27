@@ -10,6 +10,7 @@
 	const ROUTE30_FRUIT_TREE2
 	const ROUTE30_COOLTRAINER_F
 	const ROUTE30_POKE_BALL
+	const ROUTE30_ZUBAT
 
 Route30_MapScripts:
 	def_scene_scripts
@@ -259,6 +260,25 @@ Route30_MikeysRattataAttacksMovement:
 	big_step DOWN
 	big_step UP
 	step_end
+	
+ShinyZubat:
+	opentext
+	writetext ZubatCryText
+	pause 15
+	cry ZUBAT
+	closetext
+	loadwildmon ZUBAT, 2
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCESHINY
+	startbattle
+	ifequal LOSE, .NotBeaten
+	disappear ROUTE30_ZUBAT
+.NotBeaten:
+	reloadmapafterbattle
+	opentext
+	writetext ZubatFledText
+	closetext
+	setscene 0 ; Not sure if needed
+	end
 
 Text_UseTackle:
 	text "Go, RATTATA!"
@@ -403,6 +423,14 @@ YoungsterJoeyText_GiveHPUpAfterBattle:
 	para "I'm going to get"
 	line "tougher too."
 	done
+	
+ZubatCryText:
+	text "ZUBAT: SCREEEE"
+	done
+	
+ZubatFledText:
+	text "ZUBAT flew away..."
+	done
 
 Route30_MapEvents:
 	db 0, 0 ; filler
@@ -432,3 +460,4 @@ Route30_MapEvents:
 	object_event 11,  5, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route30FruitTree2, -1
 	object_event  2, 13, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route30CooltrainerFScript, -1
 	object_event  8, 35, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route30Antidote, EVENT_ROUTE_30_ANTIDOTE
+	object_event  7, 15, SPRITE_ZUBAT, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ShinyZubat, EVENT_SHINY_ZUBAT

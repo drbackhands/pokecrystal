@@ -149,6 +149,13 @@ SECTION "Extra Songs 2", ROMX
 
 INCLUDE "audio/music/postcredits.asm"
 
+SECTION "New Songs", ROMX
+INCLUDE "audio/music/pokemonmansion.asm"
+INCLUDE "audio/music/hoohBattle.asm"
+INCLUDE "audio/music/lugiabattle.asm"
+INCLUDE "audio/music/mewtwobattle.asm"
+INCLUDE "audio/music/indigoplateaurby.asm"
+INCLUDE "audio/music/ceruleancave.asm"
 
 SECTION "Sound Effects", ROMX
 

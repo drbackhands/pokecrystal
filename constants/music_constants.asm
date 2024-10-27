@@ -105,6 +105,12 @@
 	const MUSIC_SUICUNE_BATTLE               ; 64
 	const MUSIC_BATTLE_TOWER_LOBBY           ; 65
 	const MUSIC_MOBILE_CENTER                ; 66
+	const MUSIC_POKEMON_MANSION				 ; 67
+	const MUSIC_HOOH_BATTLE					 ; 68
+	const MUSIC_LUGIA_BATTLE				 ; 69
+	const MUSIC_MEWTWO_BATTLE				 ; 70
+	const MUSIC_INDIGO_PLATEAU_RBY			 ; 71
+	const MUSIC_CERULEAN_CAVE				 ; 72
 DEF NUM_MUSIC_SONGS EQU const_value
 
 ; GetMapMusic picks music for this value (see home/map.asm)

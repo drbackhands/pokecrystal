@@ -198,5 +198,12 @@ EngineFlags:
 
 	engine_flag wSwarmFlags, SWARMFLAGS_DUNSPARCE_SWARM_F
 	engine_flag wSwarmFlags, SWARMFLAGS_YANMA_SWARM_F
+	
+	; New
+	engine_flag, wSwarmFlags, SWARMFLAGS_MOBILE_4_F
+	engine_flag, wDailyFlags2, DAILYFLAGS2_BATTLED_BLUE_SAGE_F
+	engine_flag, wDailyFlags2, DAILYFLAGS2_BATTLED_YELLOW_SAGE_F
+	engine_flag, wDailyFlags2, DAILYFLAGS2_BATTLED_RED_SAGE_F
+	engine_flag, wDailyFlags2, DAILYFLAGS2_BATTLED_GRAND_SAGE_F
 
 	assert_table_length NUM_ENGINE_FLAGS

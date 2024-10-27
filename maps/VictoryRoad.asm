@@ -5,6 +5,7 @@
 	const VICTORYROAD_POKE_BALL3
 	const VICTORYROAD_POKE_BALL4
 	const VICTORYROAD_POKE_BALL5
+	const VICTORYROAD_RED_SAGE
 
 VictoryRoad_MapScripts:
 	def_scene_scripts
@@ -114,6 +115,32 @@ VictoryRoadHiddenMaxPotion:
 
 VictoryRoadHiddenFullHeal:
 	hiddenitem FULL_HEAL, EVENT_VICTORY_ROAD_HIDDEN_FULL_HEAL
+	
+RedSageScript:
+	faceplayer
+	opentext
+	writetext RedSageText
+	pause 15
+	promptbutton
+	setval ENTEI
+	special MonCheck
+	iffalse .NoEntei
+	cry ENTEI
+	pause 30
+	writetext RedSageSurpriseText
+	pause 20
+	promptbutton
+	cry MOLTRES
+	closetext
+	special FadeOutToBlack
+	special ReloadSpritesNoPalettes
+	disappear VICTORYROAD_RED_SAGE
+	pause 30
+	special FadeInFromBlack
+	end
+	
+.NoEntei
+	closetext
 
 VictoryRoadRivalBattleApproachMovement1:
 	step LEFT
@@ -235,6 +262,14 @@ VictoryRoadRivalVictoryText:
 	para "I don't need any-"
 	line "thing else."
 	done
+	
+RedSageText:
+	text "..."
+	done
+	
+RedSageSurpriseText:
+	text "...!"
+	done
 
 VictoryRoad_MapEvents:
 	db 0, 0 ; filler
@@ -250,6 +285,7 @@ VictoryRoad_MapEvents:
 	warp_event  0, 11, VICTORY_ROAD, 9
 	warp_event  0, 27, VICTORY_ROAD, 8
 	warp_event 13,  5, ROUTE_23, 3
+	warp_event 11, 27, FIERY_CAVE, 1
 
 	def_coord_events
 	coord_event 12,  8, SCENE_VICTORYROAD_RIVAL_BATTLE, VictoryRoadRivalLeft
@@ -266,3 +302,4 @@ VictoryRoad_MapEvents:
 	object_event 18, 29, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VictoryRoadFullRestore, EVENT_VICTORY_ROAD_FULL_RESTORE
 	object_event 15, 48, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VictoryRoadFullHeal, EVENT_VICTORY_ROAD_FULL_HEAL
 	object_event  7, 38, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VictoryRoadHPUp, EVENT_VICTORY_ROAD_HP_UP
+	object_event 11, 28, SPRITE_SAGE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RedSageScript, EVENT_RED_SAGE

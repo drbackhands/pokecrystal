@@ -776,7 +776,6 @@ OlivineLighthouse5F_Blocks:
 OlivineLighthouse6F_Blocks:
 	INCBIN "maps/OlivineLighthouse6F.blk"
 
-
 SECTION "Map Blocks 3", ROMX
 
 BetaSlowpokeWell1F_Blocks: ; unreferenced
@@ -1044,6 +1043,18 @@ BetaBlank_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaBlank.blk"
 
 GoldenrodDeptStoreRoof_Blocks:
+
 	INCBIN "maps/GoldenrodDeptStoreRoof.blk"
+	
+SECTION "Map Blocks 4", ROMX
+	
+SeafoamCave_Blocks:
+	INCBIN "maps/SeafoamCave.blk"
+
+RockTunnelCave_Blocks:
+	INCBIN "maps/RockTunnelCave.blk"
+	
+FieryCave_Blocks:
+	INCBIN "maps/FieryCave.blk"
 
 ENDSECTION

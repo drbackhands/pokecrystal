@@ -6,6 +6,7 @@
 	const ROUTE15_TEACHER1
 	const ROUTE15_TEACHER2
 	const ROUTE15_POKE_BALL
+	const ROUTE15_DITTO
 
 Route15_MapScripts:
 	def_scene_scripts
@@ -83,6 +84,25 @@ Route15Sign:
 
 Route15PPUp:
 	itemball PP_UP
+	
+ShinyDitto:
+	opentext
+	writetext DittoCryText
+	pause 15
+	cry DITTO
+	closetext
+	loadwildmon DITTO, 40
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCESHINY
+	startbattle
+	ifequal LOSE, .NotBeaten
+	disappear ROUTE15_DITTO
+.NotBeaten:
+	reloadmapafterbattle
+	opentext
+	writetext DittoFledText
+	closetext
+	setscene 0 ; Not sure if needed
+	end
 
 TeacherColetteSeenText:
 	text "Have you forgotten"
@@ -199,6 +219,15 @@ Route15SignText:
 	line "LAVENDER TOWN"
 	done
 
+DittoCryText:
+	text "DITTO: Kyyuuu!"
+	done
+	
+DittoFledText:
+	text "DITTO slinked"
+	line "away..."
+	done
+
 Route15_MapEvents:
 	db 0, 0 ; filler
 
@@ -219,3 +248,4 @@ Route15_MapEvents:
 	object_event 30, 12, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerTeacherColette, -1
 	object_event 20, 10, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerTeacherHillary, -1
 	object_event 12,  5, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route15PPUp, EVENT_ROUTE_15_PP_UP
+	object_event 14,  8, SPRITE_GRIMER, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ShinyDitto, EVENT_SHINY_DITTO	

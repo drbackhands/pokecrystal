@@ -10,6 +10,7 @@
 	const ILEXFOREST_POKE_BALL2
 	const ILEXFOREST_POKE_BALL3
 	const ILEXFOREST_POKE_BALL4
+	const ILEXFOREST_ODDISH
 
 IlexForest_MapScripts:
 	def_scene_scripts
@@ -479,6 +480,25 @@ IlexForestShrineScript:
 	disappear ILEXFOREST_KURT
 .DidntCatchCelebi:
 	end
+	
+ShinyOddish:
+	opentext
+	writetext OddishCryText
+	pause 15
+	cry ODDISH
+	closetext
+	loadwildmon ODDISH, 12
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCESHINY
+	startbattle
+	ifequal LOSE, .NotBeaten
+	disappear ILEXFOREST_ODDISH
+.NotBeaten:
+	reloadmapafterbattle
+	opentext
+	writetext OddishFledText
+	closetext
+	setscene 0 ; Not sure if needed
+	end
 
 MovementData_Farfetchd_Pos1_Pos2:
 	big_step UP
@@ -933,6 +953,14 @@ BugCatcherWayneAfterBattleText:
 	line "HEADBUTT in other"
 	cont "places too."
 	done
+	
+OddishCryText:
+	text "ODDISH: Hyaah!"
+	done
+	
+OddishFledText:
+	text "ODDISH ran away..."
+	done
 
 IlexForest_MapEvents:
 	db 0, 0 ; filler
@@ -963,3 +991,4 @@ IlexForest_MapEvents:
 	object_event  9, 17, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, IlexForestXAttack, EVENT_ILEX_FOREST_X_ATTACK
 	object_event 17,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, IlexForestAntidote, EVENT_ILEX_FOREST_ANTIDOTE
 	object_event 27,  1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, IlexForestEther, EVENT_ILEX_FOREST_ETHER
+	object_event  0,  9, SPRITE_ODDISH, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ShinyOddish, EVENT_SHINY_ODDISH

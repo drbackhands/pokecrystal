@@ -347,7 +347,7 @@ KantoGrassWildMons:
 	db 18, RATICATE
 	db 18, JIGGLYPUFF
 	db 16, ABRA
-	db 16, ABRA
+	db 16, VULPIX
 	; day
 	db 17, RATTATA
 	db 17, SPEAROW
@@ -355,7 +355,7 @@ KantoGrassWildMons:
 	db 18, RATICATE
 	db 18, JIGGLYPUFF
 	db 16, ABRA
-	db 16, ABRA
+	db 16, VULPIX
 	; nite
 	db 17, MEOWTH
 	db 17, MURKROW
@@ -683,7 +683,7 @@ KantoGrassWildMons:
 	db 4, DODUO
 	db 6, PONYTA
 	db 7, FEAROW
-	db 7, FEAROW
+	db 7, MANKEY
 	; day
 	db 3, RATTATA
 	db 3, SPEAROW
@@ -691,7 +691,7 @@ KantoGrassWildMons:
 	db 4, DODUO
 	db 6, PONYTA
 	db 7, FEAROW
-	db 7, FEAROW
+	db 7, MANKEY
 	; nite
 	db 3, RATTATA
 	db 3, POLIWAG

@@ -107,4 +107,10 @@ Music:
 	dba Music_SuicuneBattle
 	dba Music_BattleTowerLobby
 	dba Music_MobileCenter
+	dba Music_PokemonMansion
+	dba Music_HoOhBattle
+	dba Music_LugiaBattle
+	dba Music_MewtwoBattle
+	dba Music_IndigoPlateauRBY
+	dba Music_CeruleanCave
 	assert_table_length NUM_MUSIC_SONGS

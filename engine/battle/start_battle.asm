@@ -57,7 +57,7 @@ PlayBattleMusic:
 	call PlayMusic
 	call DelayFrame
 	call MaxVolume
-
+	
 	ld a, [wBattleType]
 	cp BATTLETYPE_SUICUNE
 	ld de, MUSIC_SUICUNE_BATTLE
@@ -69,6 +69,11 @@ PlayBattleMusic:
 	ld a, [wOtherTrainerClass]
 	and a
 	jr nz, .trainermusic
+	
+	ld a, [wTempEnemyMonSpecies]
+	ld hl, BattleMusic_Legendaries
+	call .loadfromarray
+	jp c, .done
 
 	farcall RegionCheck
 	ld a, e
@@ -78,7 +83,7 @@ PlayBattleMusic:
 	ld de, MUSIC_JOHTO_WILD_BATTLE
 	ld a, [wTimeOfDay]
 	cp NITE_F
-	jr nz, .done
+	jp nz, .done
 	ld de, MUSIC_JOHTO_WILD_BATTLE_NIGHT
 	jr .done
 
@@ -98,6 +103,20 @@ PlayBattleMusic:
 	cp GRUNTM
 	jr z, .done
 	cp GRUNTF
+	jr z, .done
+	cp EXECUTIVEM
+	jr z, .done
+	cp EXECUTIVEF
+	jr z, .done
+	
+	ld de, MUSIC_HOOH_BATTLE
+	cp BLUE_SAGE
+	jr z, .done
+	cp YELLOW_SAGE
+	jr z, .done
+	cp RED_SAGE
+	jr z, .done
+	cp GRAND_SAGE
 	jr z, .done
 
 	ld de, MUSIC_KANTO_GYM_LEADER_BATTLE
@@ -147,6 +166,21 @@ PlayBattleMusic:
 	pop de
 	pop hl
 	ret
+	
+.loadfromarray
+	ld e, 3 ; d is already 0 from 'ld de, MUSIC_NONE'
+	call IsInArray
+	ret nc
+	inc hl
+	jr .found
+	
+.found
+	ld a, [hli]
+	ld d, [hl]
+	ld e, a
+	ret
+	
+INCLUDE "data/battle/music.asm"
 
 ClearBattleRAM:
 	xor a

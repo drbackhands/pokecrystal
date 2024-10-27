@@ -2,6 +2,8 @@
 	const DARKCAVEBLACKTHORNENTRANCE_PHARMACIST
 	const DARKCAVEBLACKTHORNENTRANCE_POKE_BALL1
 	const DARKCAVEBLACKTHORNENTRANCE_POKE_BALL2
+	const DARKCAVEBLACKTHORNENTRANCE_LARVITAR
+
 
 DarkCaveBlackthornEntrance_MapScripts:
 	def_scene_scripts
@@ -29,7 +31,26 @@ DarkCaveBlackthornEntranceRevive:
 	itemball REVIVE
 
 DarkCaveBlackthornEntranceTMSnore:
-	itemball TM_SNORE
+	itemball TM_FRUSTRATION
+	
+ShinyLarvitar:
+	opentext
+	writetext LarvitarCryText
+	pause 15
+	cry LARVITAR
+	closetext
+	loadwildmon LARVITAR, 5
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCESHINY
+	startbattle
+	ifequal LOSE, .NotBeaten
+	disappear DARKCAVEBLACKTHORNENTRANCE_LARVITAR
+.NotBeaten:
+	reloadmapafterbattle
+	opentext
+	writetext LarvitarFledText
+	closetext
+	setscene 0 ; Not sure if needed
+	end
 
 DarkCaveBlackthornEntrancePharmacistText1:
 	text "Whoa! You startled"
@@ -58,6 +79,15 @@ DarkCaveBlackthornEntrancePharmacistText2:
 	line "the power of dark-"
 	cont "type moves."
 	done
+	
+LarvitarCryText:
+	text "LARVITAR: TYAAA!"
+	done
+	
+LarvitarFledText:
+	text "LARVITAR borrowed"
+	line "away..."
+	done
 
 DarkCaveBlackthornEntrance_MapEvents:
 	db 0, 0 ; filler
@@ -74,3 +104,4 @@ DarkCaveBlackthornEntrance_MapEvents:
 	object_event  7,  3, SPRITE_PHARMACIST, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DarkCaveBlackthornEntrancePharmacistScript, -1
 	object_event 21, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DarkCaveBlackthornEntranceRevive, EVENT_DARK_CAVE_BLACKTHORN_ENTRANCE_REVIVE
 	object_event  7, 22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DarkCaveBlackthornEntranceTMSnore, EVENT_DARK_CAVE_BLACKTHORN_ENTRANCE_TM_SNORE
+	object_event 13,  5, SPRITE_RHYDON, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ShinyLarvitar, EVENT_SHINY_LARVITAR

@@ -702,5 +702,17 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass MYSTICALMAN ; 43
 	const EUSINE
+	
+	trainerclass BLUE_SAGE ; 44
+	const BLUE_SAGE1
+	
+	trainerclass YELLOW_SAGE ; 45
+	const YELLOW_SAGE1
+
+	trainerclass RED_SAGE ; 46
+	const RED_SAGE1
+	
+	trainerclass GRAND_SAGE ; 47
+	const GRAND_SAGE1
 
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1

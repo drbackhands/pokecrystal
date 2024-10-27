@@ -1551,7 +1551,7 @@ JohtoGrassWildMons:
 	db 16, RATICATE
 	db 15, ARBOK
 	db 16, FEAROW
-	db 16, FEAROW
+	db 15, MAREEP
 	; day
 	db 13, EKANS
 	db 14, SPEAROW
@@ -1559,7 +1559,7 @@ JohtoGrassWildMons:
 	db 16, RATICATE
 	db 15, ARBOK
 	db 16, FEAROW
-	db 16, FEAROW
+	db 15, MAREEP
 	; nite
 	db 13, RATTATA
 	db 14, ZUBAT
@@ -1587,7 +1587,7 @@ JohtoGrassWildMons:
 	db 15, FURRET
 	db 17, RATICATE
 	db 17, FURRET
-	db 17, FURRET
+	db 17, GIRAFARIG
 	; nite
 	db 15, VENONAT
 	db 16, NOCTOWL
@@ -1595,7 +1595,7 @@ JohtoGrassWildMons:
 	db 17, VENONAT
 	db 17, RATICATE
 	db 17, VENOMOTH
-	db 17, VENOMOTH
+	db 17, GIRAFARIG
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_44

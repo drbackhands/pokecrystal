@@ -70,4 +70,8 @@ TrainerGroups:
 	dw OfficerGroup
 	dw GruntFGroup
 	dw MysticalmanGroup
+	dw BlueSageGroup
+	dw YellowSageGroup
+	dw RedSageGroup
+	dw GrandSageGroup
 	assert_table_length NUM_TRAINER_CLASSES

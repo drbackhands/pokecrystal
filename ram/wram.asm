@@ -1811,7 +1811,7 @@ wGBPrinterBrightness::
 ;   darkest:  $7F
 	db
 wOptions2::
-; bit 1: menu account off/on
+; bit 1: menu clock off/on
 	db
 	ds 2
 wOptionsEnd::
@@ -3262,7 +3262,7 @@ wPhoneList:: ds CONTACT_LIST_SIZE + 1
 	ds 22
 
 wLuckyNumberShowFlag:: db
-	ds 1
+wRepelType:: db
 wLuckyIDNumber:: dw
 
 wRepelEffect:: db ; If a Repel is in use, it contains the nr of steps it's still active

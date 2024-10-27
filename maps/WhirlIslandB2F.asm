@@ -2,6 +2,7 @@
 	const WHIRLISLANDB2F_POKE_BALL1
 	const WHIRLISLANDB2F_POKE_BALL2
 	const WHIRLISLANDB2F_POKE_BALL3
+	const WHIRLISLANDB2F_KRABBY
 
 WhirlIslandB2F_MapScripts:
 	def_scene_scripts
@@ -16,6 +17,34 @@ WhirlIslandB2FMaxRevive:
 
 WhirlIslandB2FMaxElixer:
 	itemball MAX_ELIXER
+	
+ShinyKrabby:
+	opentext
+	writetext KrabbyCryText
+	pause 15
+	cry KRABBY
+	closetext
+	loadwildmon KRABBY, 30
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCESHINY
+	startbattle
+	ifequal LOSE, .NotBeaten
+	disappear WHIRLISLANDB2F_KRABBY
+.NotBeaten:
+	reloadmapafterbattle
+	opentext
+	writetext KrabbyFledText
+	closetext
+	setscene 0 ; Not sure if needed
+	end
+	
+KrabbyCryText:
+	text "KRABBY: Kokoko!"
+	done
+	
+KrabbyFledText:
+	text "KRABBY scuttled"
+	line "away..."
+	done
 
 WhirlIslandB2F_MapEvents:
 	db 0, 0 ; filler
@@ -34,3 +63,4 @@ WhirlIslandB2F_MapEvents:
 	object_event 10, 11, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, WhirlIslandB2FFullRestore, EVENT_WHIRL_ISLAND_B2F_FULL_RESTORE
 	object_event  6,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, WhirlIslandB2FMaxRevive, EVENT_WHIRL_ISLAND_B2F_MAX_REVIVE
 	object_event  5, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, WhirlIslandB2FMaxElixer, EVENT_WHIRL_ISLAND_B2F_MAX_ELIXER
+	object_event  5, 10, SPRITE_SHELLDER, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ShinyKrabby, EVENT_SHINY_KRABBY	

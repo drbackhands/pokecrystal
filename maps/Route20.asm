@@ -2,6 +2,7 @@
 	const ROUTE20_SWIMMER_GIRL1
 	const ROUTE20_SWIMMER_GIRL2
 	const ROUTE20_SWIMMER_GUY
+	const ROUTE20_BLUE_SAGE
 
 Route20_MapScripts:
 	def_scene_scripts
@@ -45,6 +46,36 @@ TrainerSwimmermCameron:
 	waitbutton
 	closetext
 	end
+	
+BlueSageScript:
+	faceplayer
+	opentext
+	writetext BlueSageText
+	pause 15
+	promptbutton
+	setval SUICUNE
+	special MonCheck
+	iffalse .NoSuicune
+	cry SUICUNE
+	pause 30
+	writetext BlueSageSurpriseText
+	pause 20
+	promptbutton
+	cry SUICUNE
+	closetext
+	special FadeOutToBlack
+	special ReloadSpritesNoPalettes
+	disappear ROUTE20_BLUE_SAGE
+	pause 30
+	special FadeInFromBlack
+	end
+	
+	
+	
+.NoSuicune
+	closetext
+	
+
 
 CinnabarGymSign:
 	jumptext CinnabarGymSignText
@@ -109,13 +140,22 @@ CinnabarGymSignText:
 	para "CINNABAR GYM"
 	line "LEADER: BLAINE"
 	done
+	
+BlueSageText:
+	text "..."
+	done
+	
+BlueSageSurpriseText:
+	text "...!"
+	done
 
 Route20_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
 	warp_event 38,  7, SEAFOAM_GYM, 1
-
+	warp_event 30,  5, SEAFOAM_CAVE, 1
+	
 	def_coord_events
 
 	def_bg_events
@@ -125,3 +165,4 @@ Route20_MapEvents:
 	object_event 52,  8, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerSwimmerfNicole, -1
 	object_event 45, 13, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerSwimmerfLori, -1
 	object_event 12, 13, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerSwimmermCameron, -1
+	object_event 30,  6, SPRITE_SAGE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, BlueSageScript, EVENT_BLUE_SAGE
